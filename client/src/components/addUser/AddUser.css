@@ -1,0 +1,29 @@
+.addUser{
+    background-color: white;
+    width: 25%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.65);
+
+
+}
+.addUserform .inputGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addUserform .inputGroup label{
+    margin-top: 5px ;
+}
+.addUserform .inputGroup input{
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.addUserform .inputGroup button{
+    margin-top: 5px;
+}
+.addUser h3{
+    margin-top: 30px;
+}
