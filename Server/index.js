@@ -5,12 +5,14 @@ import dotenv from "dotenv"
 import route from "./routes/userRoute.js"
 import cors from "cors"
 import path from 'path';
+import userRouter from "./routes/loginRoute.js"
 
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 dotenv.config();
 app.use('/uploads', express.static(path.join('uploads')));
+app.use("/api",userRouter)
 
 const PORT = process.env.PORT || 8000;
 const MONGOURL = process.env.MONGO_URL;
